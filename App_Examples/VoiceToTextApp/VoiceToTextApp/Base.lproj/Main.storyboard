@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VoiceToTextApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RemoveBG" translatesAutoresizingMaskIntoConstraints="NO" id="mHn-3e-bKO">
+                                <rect key="frame" x="102.66666666666667" y="160" width="187.66666666666663" height="333"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="KWP-rk-oRc">
+                                <rect key="frame" x="87" y="534" width="219" height="86.666666666666629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWy-PU-BJx">
+                                        <rect key="frame" x="80.333333333333343" y="0.0" width="58.666666666666657" height="26.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="sLn-2t-oPZ">
+                                        <rect key="frame" x="15.666666666666671" y="52.333333333333371" width="187.66666666666663" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2K-Pg-41f">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.333333333333329" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                                <connections>
+                                                    <action selector="btnStartOrStopDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="94T-oN-Xeb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPW-up-d60">
+                                                <rect key="frame" x="120.33333333333334" y="0.0" width="67.333333333333343" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                                <connections>
+                                                    <action selector="btnRefreshDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MKK-S7-uW6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZj-YP-9ER">
+                                <rect key="frame" x="63" y="670.66666666666663" width="267" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Move To The Next Level"/>
+                                <connections>
+                                    <action selector="btnMoveToNextDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0b-a4-OW3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KWP-rk-oRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="16u-tB-Q7Z"/>
+                            <constraint firstItem="KWP-rk-oRc" firstAttribute="centerX" secondItem="mHn-3e-bKO" secondAttribute="centerX" id="2P7-dH-dcO"/>
+                            <constraint firstItem="KWP-rk-oRc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="4Ud-FU-fHV"/>
+                            <constraint firstItem="KWP-rk-oRc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="534" id="5eZ-z8-uBP"/>
+                            <constraint firstItem="KWP-rk-oRc" firstAttribute="top" secondItem="mHn-3e-bKO" secondAttribute="bottom" constant="41" id="DHQ-fg-MBe"/>
+                            <constraint firstItem="KWP-rk-oRc" firstAttribute="centerX" secondItem="DZj-YP-9ER" secondAttribute="centerX" id="NZt-3a-iy6"/>
+                            <constraint firstItem="DZj-YP-9ER" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="ScQ-Ix-KIu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DZj-YP-9ER" secondAttribute="trailing" symbolic="YES" id="dON-et-3qE"/>
+                            <constraint firstItem="DZj-YP-9ER" firstAttribute="top" secondItem="KWP-rk-oRc" secondAttribute="bottom" constant="50" id="oa0-Ga-luC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnMoveToNext" destination="DZj-YP-9ER" id="vj8-1R-bsp"/>
+                        <outlet property="btnRefresh" destination="MPW-up-d60" id="CSg-ge-nRE"/>
+                        <outlet property="btnStartOrStop" destination="h2K-Pg-41f" id="OKZ-Hs-DDW"/>
+                        <outlet property="timeText" destination="qWy-PU-BJx" id="890-5k-k7e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RemoveBG" width="187.5" height="333"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

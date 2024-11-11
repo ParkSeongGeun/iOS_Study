@@ -10,9 +10,28 @@
 		807209C32CE2413E00123BFB /* VoiceToTextApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceToTextApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+<<<<<<< HEAD
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		807209D52CE2414100123BFB /* Exceptions for "VoiceToTextApp" folder in "VoiceToTextApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 807209C22CE2413E00123BFB /* VoiceToTextApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		807209C52CE2413E00123BFB /* VoiceToTextApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				807209D52CE2414100123BFB /* Exceptions for "VoiceToTextApp" folder in "VoiceToTextApp" target */,
+			);
+=======
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		807209C52CE2413E00123BFB /* VoiceToTextApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+>>>>>>> e95e4734f4d8534a7a548662e8410c43e381dd23
 			path = VoiceToTextApp;
 			sourceTree = "<group>";
 		};
